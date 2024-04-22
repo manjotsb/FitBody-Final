@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FitBody.Views.AboutUs"
+             Title="AboutUs">
+    <ScrollView>
+        <VerticalStackLayout>
+            <Label Text="FitBody" FontSize="Header" VerticalOptions="Center" HorizontalOptions="Center" FontAttributes="Bold" FontFamily="PoppinsSemiBold"></Label>
+
+            <Label  FontSize="Large" FontAttributes="Bold" Margin="32" Text= "Welcome to FitBody, your ultimate fitness companion in Maui! Get ready to embark on a journey towards a healthier, stronger you. Whether you're a seasoned athlete or just starting out, our app has everything you need to achieve your fitness goals and make the most out of your time in paradise." HorizontalOptions="Center" VerticalOptions="Center" FontFamily="PoppinsRegular"></Label>
+            <Label FontAttributes="Italic" FontSize="Medium" Text=" Discover a wide range of workouts tailored to suit your needs, from high-intensity interval training to relaxing yoga sessions on the beach. Our expert trainers are here to guide and motivate you every step of the way, ensuring you stay on track and maximize your results."  HorizontalOptions="Center" VerticalOptions="Center" FontFamily="PoppinsRegular"></Label>
+
+            <Label FontAttributes="Italic" Margin="21" FontSize="Medium" Text="    Track your progress effortlessly with our intuitive tracking features, including workout logs, calorie counters, and personalized fitness assessments. Set goals, monitor your performance, and celebrate your achievements as you work towards becoming the best version of yourself."  HorizontalOptions="Center" VerticalOptions="Center" FontFamily="PoppinsRegular"></Label>
+
+            <Label FontAttributes="Italic" Margin="21" FontSize="Medium" Text="   Connect with fellow fitness enthusiasts in our vibrant community, share tips, and inspire each other to reach new heights. Whether you're looking for a workout buddy or just some extra motivation, you'll find support and encouragement every time you open the app. "  HorizontalOptions="Center" VerticalOptions="Center" FontFamily="PoppinsRegular"></Label>
+
+            <Label FontAttributes="Italic" Margin="21" FontSize="Medium" Text="          Join the FitBody family today and start your journey to a healthier, happier you. Let's make every workout count and embrace the beauty of fitness together in Maui!"  HorizontalOptions="Center" VerticalOptions="Center" FontFamily="PoppinsRegular"></Label>
+
+            <Label FontSize="Header" Text="Privacy Policy:" FontAttributes="Bold" Margin="32" HorizontalOptions="Center" VerticalOptions="Center" FontFamily="PoppinsSemiBold"></Label>
+            <Label FontSize="Small" FontAttributes="Italic" Text="Protecting your privacy is important to us. Our Privacy Policy outlines how we collect, use, and safeguard your personal information. We are committed to transparency and ensuring that your data is handled responsibly. Please review our Privacy Policy for more details." Margin="16" HorizontalOptions="Center" VerticalOptions="Center" FontFamily="PoppinsRegular"></Label>
+
+            <Label FontSize="Header" Text="Terms and Conditions:" FontAttributes="Bold" Margin="32" HorizontalOptions="Center" VerticalOptions="Center" FontFamily="PoppinsSemiBold"></Label>
+            <Label FontSize="Small" FontAttributes="Italic" Text="By using the FitBody app, you agree to abide by our Terms and Conditions. These terms outline the rules and regulations governing the use of our services. Please review them carefully before proceeding." Margin="16" HorizontalOptions="Center" VerticalOptions="Center" FontFamily="PoppinsRegular"></Label>
+
+            <Label FontSize="Header" Text="End User License Agreement (EULA):" FontAttributes="Bold" Margin="32" HorizontalOptions="Center" VerticalOptions="Center" FontFamily="PoppinsSemiBold"></Label>
+            <Label FontSize="Small" FontAttributes="Italic"  Text="By downloading and using the FitBody app, you agree to the terms of our End User License Agreement. This agreement governs the usage of our software and contains important provisions regarding your rights and responsibilities. Please read the EULA carefully before proceeding." Margin="16" HorizontalOptions="Center" VerticalOptions="Center" FontFamily="PoppinsRegular"></Label>
+
+            <Button Text="Back" FontFamily="PoppinsSemiBold" Background="MidnightBlue" FontSize="22" BorderColor="White" BorderWidth="1" WidthRequest="300" Margin="10" Clicked="OnBackClicked"></Button>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

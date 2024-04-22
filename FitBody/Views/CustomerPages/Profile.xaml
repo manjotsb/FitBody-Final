@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FitBody.Views.CustomerPages.Profile">
+
+    <ScrollView>
+        <VerticalStackLayout Margin="45" >
+            <Label Text="Hi, There"
+                Margin="21"
+                FontSize="Header"
+                FontAttributes="Bold"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" 
+                FontFamily="PoppinsSemiBold"
+                TextColor="Blue" />
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <VerticalStackLayout Grid.Column="0" Margin="100, 50" VerticalOptions="Center">
+                    <Frame Margin="10" CornerRadius="10" BorderColor="Blue" Background="White">
+                        <HorizontalStackLayout Margin="10">
+                            <Label Text="Username: " FontSize="Medium" Margin="10" FontFamily="PoppinsSemiBold"></Label>
+                            <Label x:Name="username" FontSize="Medium" Margin="10" FontFamily="PoppinsRegular"/>
+                        </HorizontalStackLayout>
+                    </Frame>
+                    <Frame Margin="10" CornerRadius="10" BorderColor="Blue" Background="White">
+                        <HorizontalStackLayout Margin="10">
+                            <Label Text="Name: " FontSize="Medium" Margin="10" FontFamily="PoppinsSemiBold"></Label>
+                            <Label x:Name="name" FontSize="Medium" Margin="10" FontFamily="PoppinsRegular"/>
+                        </HorizontalStackLayout>
+                    </Frame>
+                    <Frame Margin="10" CornerRadius="10" BorderColor="Blue" Background="White">
+                        <HorizontalStackLayout Margin="10">
+                            <Label Text="Email: " FontSize="Medium" Margin="10" FontFamily="PoppinsSemiBold"></Label>
+                            <Label x:Name="email" FontSize="Medium" Margin="10" FontFamily="PoppinsRegular"/>
+                        </HorizontalStackLayout>
+                    </Frame>
+                </VerticalStackLayout>
+
+                <VerticalStackLayout Grid.Column="1" Margin="100, 0" VerticalOptions="Center">
+                    <Frame Margin="10" CornerRadius="10" BorderColor="Blue" Background="White">
+                        <HorizontalStackLayout Margin="10">
+                            <Label Text="Weight: " FontSize="Medium" Margin="10" FontFamily="PoppinsSemiBold"></Label>
+                            <Label x:Name="weight" FontSize="Medium" Margin="10" FontFamily="PoppinsRegular"/>
+                        </HorizontalStackLayout>
+                    </Frame>
+                    <Frame Margin="10" CornerRadius="10" BorderColor="Blue" Background="White">
+                        <HorizontalStackLayout Margin="10">
+                            <Label Text="Height: " FontSize="Medium" Margin="10" FontFamily="PoppinsSemiBold"></Label>
+                            <Label x:Name="height" FontSize="Medium" Margin="10" FontFamily="PoppinsRegular"/>
+                        </HorizontalStackLayout>
+                    </Frame>
+                    <Frame Margin="10" CornerRadius="10" BorderColor="Blue" Background="White">
+                        <HorizontalStackLayout Margin="10">
+                            <Label Text="Age: " FontSize="Medium" Margin="10" FontFamily="PoppinsSemiBold"></Label>
+                            <Label  x:Name="age" FontSize="Medium" Margin="10" FontFamily="PoppinsRegular"/>
+                        </HorizontalStackLayout>
+                    </Frame>
+                </VerticalStackLayout>
+            </Grid>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

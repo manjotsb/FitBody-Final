@@ -1,0 +1,91 @@
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FitBody.Views.MainPage">
+
+    <ContentPage.Resources>
+        <LinearGradientBrush x:Key="BackgroundGradient">
+            <GradientStop Color="#080CFE" Offset="0" />
+            <GradientStop Color="#4143c5" Offset="1" />
+        </LinearGradientBrush>
+
+        <LinearGradientBrush x:Key="BackgroundGradient2">
+            <GradientStop Color="#10237C" Offset="0" />
+            <GradientStop Color="#030E3E" Offset="1" />
+        </LinearGradientBrush>
+
+        <LinearGradientBrush x:Key="BackgroundGradient3">
+            <GradientStop Color="#260272" Offset="0" />
+            <GradientStop Color="#080CFE" Offset="1" />
+        </LinearGradientBrush>
+    </ContentPage.Resources>
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="60*"/>
+            <ColumnDefinition Width="40*" />
+        </Grid.ColumnDefinitions>
+
+
+        <VerticalStackLayout Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Center" >
+            <Label Text="LOGIN" FontFamily="PoppinsSemiBold" FontAttributes="Bold" FontSize="Large" HorizontalOptions="Center"/>
+            <Label Text="Welcome Again!" FontFamily="PoppinsRegular" FontSize="15" HorizontalOptions="Center" TextColor="#404040"/>
+            <Grid ColumnDefinitions="auto, *" RowDefinitions=".50*, .50*" Margin="0, 20">
+                <Image Grid.Column="0"
+                   Grid.Row="0"
+                   Source="user.png"
+                   Margin="0, 0, 0, 12"/>
+                <Entry Grid.Column="1"
+                   Grid.Row="0"
+                   x:Name="username"
+                   Placeholder="Username"
+                   FontFamily="PoppinsRegular"
+                   FontSize="13"
+                   Margin="0, 0, 0, 30" 
+                   HeightRequest="40"
+                   WidthRequest="145"
+                   BackgroundColor="#98ABEE"/>
+
+                <Image Grid.Column="0"
+                   Grid.Row="1"
+                   Source="password.png"/>
+                <Entry Grid.Column="1"
+                   Grid.Row="1"
+                   x:Name="password"
+                   Placeholder="Password"
+                   IsPassword="True"
+                   FontFamily="PoppinsRegular"
+                   FontSize="13"
+                   Margin="10" 
+                   HeightRequest="40"
+                   WidthRequest="145"
+                   BackgroundColor="#98ABEE"/>
+            </Grid>
+
+            <Button Text="Login Now" FontFamily="PoppinsSemiBold" Background="{StaticResource BackgroundGradient}" Clicked="OnLogUserClicked"></Button>
+
+            <Label Text="OR" HorizontalOptions="Center" FontFamily="PoppinsSemiBold" FontSize="17" Margin="0, 20"/>
+
+            <Button Text="Login as Employee" FontFamily="PoppinsSemiBold" Background="{StaticResource BackgroundGradient2}" Clicked="OnLogEmployeeClicked"></Button>
+
+            <Button Text="About Us" FontFamily="PoppinsSemiBold" BackgroundColor="Transparent" BorderColor="MidnightBlue" BorderWidth="1" TextColor="MidnightBlue" Clicked="OnAboutUsClicked" Margin="0, 50"></Button>
+        </VerticalStackLayout>
+
+        <Frame Grid.Column="1" Background="{StaticResource BackgroundGradient3}" BorderColor="Transparent" CornerRadius="0" Padding="50, 200, 50, 200">
+            <Frame BackgroundColor="#22FFFFFF" >
+                <StackLayout VerticalOptions="Center">
+                    <Label Text="New Here?" FontFamily="PoppinsSemiBold" FontAttributes="Bold" FontSize="Large" HorizontalOptions="Center" TextColor="White" Margin="0, 50"/>
+                    <Label FontFamily="PoppinsRegular" FontSize="25" HorizontalOptions="Center" TextColor="White">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span Text="Sign Up and discover a  healthier, stronger you with " TextColor="White"/>
+                                <Span Text="FitBody." FontAttributes="Bold" TextColor="White"/>
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                    <Button Text="Create an Account" FontFamily="PoppinsSemiBold" Background="White" TextColor="MidnightBlue" Margin="0, 30" Clicked="OnCreateAccountClicked"></Button>
+                </StackLayout>
+            </Frame>
+        </Frame>
+    </Grid>
+
+</ContentPage>

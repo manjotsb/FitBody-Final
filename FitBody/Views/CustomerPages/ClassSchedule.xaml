@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FitBody.Views.ClassSchedule"
+             Title="ClassSchedule">
+
+    <ContentPage.Resources>
+        <LinearGradientBrush x:Key="BackgroundGradient">
+            <GradientStop Color="#080CFE" Offset="0" />
+            <GradientStop Color="#4143c5" Offset="1" />
+        </LinearGradientBrush>
+
+        <LinearGradientBrush x:Key="BackgroundGradient2">
+            <GradientStop Color="#10237C" Offset="0" />
+            <GradientStop Color="#030E3E" Offset="1" />
+        </LinearGradientBrush>
+
+        <LinearGradientBrush x:Key="BackgroundGradient3">
+            <GradientStop Color="#260272" Offset="0" />
+            <GradientStop Color="#080CFE" Offset="1" />
+        </LinearGradientBrush>
+    </ContentPage.Resources>
+
+    <VerticalStackLayout VerticalOptions="Center" >
+        <Frame x:Name="schedule"
+               Margin="70"
+               BorderColor="MidnightBlue">
+            <Grid RowSpacing="12">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+
+                <Label Grid.Column="1" Grid.Row="0" Text="SUN" HorizontalOptions="Center" FontSize="Medium" FontFamily="PoppinsSemiBold" />
+                <Label Grid.Column="2" Grid.Row="0" Text="MON" HorizontalOptions="Center" FontSize="Medium" FontFamily="PoppinsSemiBold" />
+                <Label Grid.Column="3" Grid.Row="0" Text="TUE" HorizontalOptions="Center" FontSize="Medium" FontFamily="PoppinsSemiBold" />
+                <Label Grid.Column="4" Grid.Row="0" Text="WED" HorizontalOptions="Center" FontSize="Medium" FontFamily="PoppinsSemiBold" />
+                <Label Grid.Column="5" Grid.Row="0" Text="THU" HorizontalOptions="Center" FontSize="Medium" FontFamily="PoppinsSemiBold" />
+                <Label Grid.Column="6" Grid.Row="0" Text="FRI" HorizontalOptions="Center" FontSize="Medium" FontFamily="PoppinsSemiBold" />
+                <Label Grid.Column="7" Grid.Row="0" Text="SAT" HorizontalOptions="Center" FontSize="Medium" FontFamily="PoppinsSemiBold" />
+
+                <Label Grid.Column="0" Grid.Row="1" Text="7:00 AM" HorizontalOptions="Center" FontSize="Medium" FontFamily="PoppinsRegular" Margin="0,0,12,0"/>
+                <Label Grid.Column="0" Grid.Row="2" Text="8:00 AM" HorizontalOptions="Center" FontSize="Medium" FontFamily="PoppinsRegular" Margin="0,0,12,0"/>
+                <Label Grid.Column="0" Grid.Row="3" Text="9:00 AM" HorizontalOptions="Center" FontSize="Medium" FontFamily="PoppinsRegular" Margin="0,0,12,0"/>
+                <Label Grid.Column="0" Grid.Row="4" Text="10:00 AM" HorizontalOptions="Center" FontSize="Medium" FontFamily="PoppinsRegular" Margin="0,0,12,0"/>
+                <Label Grid.Column="0" Grid.Row="5" Text="11:00 AM" HorizontalOptions="Center" FontSize="Medium" FontFamily="PoppinsRegular" Margin="0,0,12,0"/>
+                <Label Grid.Column="0" Grid.Row="6" Text="12:00 PM" HorizontalOptions="Center" FontSize="Medium" FontFamily="PoppinsRegular" Margin="0,0,12,0"/>
+                <Label Grid.Column="0" Grid.Row="7" Text="1:00 PM" HorizontalOptions="Center" FontSize="Medium" FontFamily="PoppinsRegular" Margin="0,0,12,0"/>
+                <Label Grid.Column="0" Grid.Row="8" Text="2:00 PM" HorizontalOptions="Center" FontSize="Medium" FontFamily="PoppinsRegular" Margin="0,0,12,0"/>
+                <Label Grid.Column="0" Grid.Row="9" Text="3:00 PM" HorizontalOptions="Center" FontSize="Medium" FontFamily="PoppinsRegular" Margin="0,0,12,0"/>
+                <Label Grid.Column="0" Grid.Row="10" Text="4:00 PM" HorizontalOptions="Center" FontSize="Medium" FontFamily="PoppinsRegular" Margin="0,0,12,0"/>
+                <Label Grid.Column="0" Grid.Row="11" Text="5:00 PM" HorizontalOptions="Center" FontSize="Medium" FontFamily="PoppinsRegular" Margin="0,0,12,0"/>
+
+
+                <Button Grid.Column="1" Grid.Row="1" BackgroundColor="#64B5F6" BorderColor="Black" BorderWidth="1" Clicked="OnButtonClicked" Text="Zumba" FontFamily="PoppinsRegular" TextColor="Black"/>
+                <Button Grid.Column="3" Grid.Row="2" BackgroundColor="#9FA8DA" BorderColor="Black" BorderWidth="1" Clicked="OnButtonClicked" Text="Cycling" FontFamily="PoppinsRegular" TextColor="Black"/>
+                <Button Grid.Column="5" Grid.Row="3" BackgroundColor="#B39DDB" BorderColor="Black" BorderWidth="1" Clicked="OnButtonClicked" Text="Yoga" FontFamily="PoppinsRegular" TextColor="Black"/>
+                <Button Grid.Column="7" Grid.Row="4" BackgroundColor="#64B5F6" BorderColor="Black" BorderWidth="1" Clicked="OnButtonClicked" Text="Pilates" FontFamily="PoppinsRegular" TextColor="Black"/>
+                <Button Grid.Column="6" Grid.Row="5" BackgroundColor="#B39DDB" BorderColor="Black" BorderWidth="1" Clicked="OnButtonClicked" Text="Kickboxing" FontFamily="PoppinsRegular" TextColor="Black"/>
+                <Button Grid.Column="1" Grid.Row="6" BackgroundColor="#64B5F6" BorderColor="Black" BorderWidth="1" Clicked="OnButtonClicked" Text="HIIT" FontFamily="PoppinsRegular" TextColor="Black"/>
+                <Button Grid.Column="4" Grid.Row="7" BackgroundColor="#64B5F6" BorderColor="Black" BorderWidth="1" Clicked="OnButtonClicked" Text="Running" FontFamily="PoppinsRegular" TextColor="Black"/>
+                <Button Grid.Column="3" Grid.Row="8" BackgroundColor="#7986CB" BorderColor="Black" BorderWidth="1" Clicked="OnButtonClicked" Text="Barre" FontFamily="PoppinsRegular" TextColor="Black"/>
+                <Button Grid.Column="2" Grid.Row="9" BackgroundColor="#B39DDB" BorderColor="Black" BorderWidth="1" Clicked="OnButtonClicked" Text="Crossfit" FontFamily="PoppinsRegular" TextColor="Black"/>
+                <Button Grid.Column="5" Grid.Row="10" BackgroundColor="#64B5F6" BorderColor="Black" BorderWidth="1" Clicked="OnButtonClicked" Text="Bootcamp" FontFamily="PoppinsRegular" TextColor="Black"/>
+                <Button Grid.Column="7" Grid.Row="11" BackgroundColor="#9FA8DA" BorderColor="Black" BorderWidth="1" Clicked="OnButtonClicked" Text="Aerobics" FontFamily="PoppinsRegular" TextColor="Black"/>
+
+
+            </Grid>
+        </Frame>
+        <Frame x:Name="classFrame"
+               Margin="100" 
+               Background="{StaticResource BackgroundGradient}" 
+               IsVisible="false"
+               MinimumHeightRequest="600">
+
+            <VerticalStackLayout VerticalOptions="Center" HorizontalOptions="Center" >
+                <Label x:Name="className" FontFamily="PoppinsSemiBold" FontSize="Large" HorizontalOptions="Center" TextColor="White"/>
+                <Label Text="With this gym class you will achieve your fitness goals!" FontFamily="PoppinsRegular" FontSize="15" HorizontalOptions="Center" TextColor="#E1E1E1"/>
+
+                <HorizontalStackLayout Margin="50">
+                    <VerticalStackLayout>
+                        <Label x:Name="instructor" FontFamily="PoppinsRegular" FontSize="Medium" TextColor="White"/>
+                        <Label x:Name="location" FontFamily="PoppinsRegular" FontSize="Medium" TextColor="White"/>
+                    </VerticalStackLayout>
+                    <VerticalStackLayout Margin="50, 0">
+                        <Label x:Name="level" FontFamily="PoppinsRegular" FontSize="Medium" TextColor="White"/>
+                        <Label x:Name="currentCapacity" FontFamily="PoppinsRegular" FontSize="Medium" TextColor="White"/>
+                    </VerticalStackLayout>
+                </HorizontalStackLayout>
+
+                <Button Text="Register for Class" FontFamily="PoppinsSemiBold" BackgroundColor="White" TextColor="MidnightBlue" Clicked="OnRegisterClicked"></Button>
+                <Label Text="OR" HorizontalOptions="Center" FontFamily="PoppinsSemiBold" FontSize="17" Margin="0, 20" TextColor="White"/>
+                <Button Text="Back to Schedule Page" FontFamily="PoppinsSemiBold" BackgroundColor="#030E3E" BorderWidth="1" BorderColor="White" Margin="0, 0, 0, 20" Clicked="OnBackClicked" ></Button>
+
+            </VerticalStackLayout>
+        </Frame>
+    </VerticalStackLayout>
+</ContentPage>

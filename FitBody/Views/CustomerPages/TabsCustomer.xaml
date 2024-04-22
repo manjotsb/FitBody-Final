@@ -1,0 +1,15 @@
+<TabbedPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            x:Class="FitBody.Views.CustomerPages.TabsCustomer"
+            xmlns:views="clr-namespace:FitBody.Views"
+            xmlns:customerViews="clr-namespace:FitBody.Views.CustomerPages">
+
+    <customerViews:CustomerHomePage Title="Home" />
+    <views:ClassSchedule Title="Class Schedule" />
+    <customerViews:Routines Title="Routines" />
+    <customerViews:BmiCalculator Title="BMI Calculator" />
+    <customerViews:ExclusiveMember Title="Exclusive Members" />
+    <customerViews:Profile Title="Profile" />
+    
+</TabbedPage>
+

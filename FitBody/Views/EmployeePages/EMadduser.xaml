@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FitBody.Views.EMadduser"
+             >
+    <ScrollView>
+        <VerticalStackLayout>
+            <Label 
+           Text="Adding User" />
+            <Entry  Placeholder="Username" HeightRequest="60" WidthRequest="424" Margin="21" TextColor="#260272"></Entry>
+            <Entry Placeholder="Name" HeightRequest="60" WidthRequest="424" Margin="21" TextColor="#260272"></Entry>
+            <Entry Placeholder="Email" HeightRequest="60" WidthRequest="424" Margin="21" TextColor="#260272"></Entry>
+            <Entry Placeholder="Password" HeightRequest="60" WidthRequest="424" Margin="21" TextColor="#260272"></Entry>
+            <Entry Placeholder="Age" HeightRequest="60" WidthRequest="424" Margin="21" TextColor="#260272"></Entry>
+            <Entry Placeholder="Height(cm)" HeightRequest="60" WidthRequest="424" Margin="21" TextColor="#260272"></Entry>
+            <Entry Placeholder="Weight(Kg)" HeightRequest="60" WidthRequest="424" Margin="21" TextColor="#260272"></Entry>
+            <Entry Placeholder="Preium" HeightRequest="60" WidthRequest="424" Margin="21" TextColor="#260272"></Entry>
+            <Button x:Name="Adduserbtn" Text="Add"  TextColor="#260272" FontSize="Medium" BackgroundColor="MidnightBlue" Margin="25" CornerRadius="5" HeightRequest="40" WidthRequest="300"></Button>
+            <Button x:Name="Back" Text="Back" Clicked="Back_Clicked" TextColor="White"  FontSize="Medium" BackgroundColor="Black" Margin="25" BorderColor="White" BorderWidth="1" CornerRadius="5
+                " HeightRequest="40" WidthRequest="300" ></Button>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

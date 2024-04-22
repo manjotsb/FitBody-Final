@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FitBody.Views.Employee.EmployeManager"
+             Title="EmployeManager">
+    <VerticalStackLayout>
+        <Label 
+         Text="Welcome"
+         FontSize="Header"
+         FontAttributes="Bold"
+         Margin="24"
+         VerticalOptions="Center" 
+         HorizontalOptions="Center"/>
+
+        <Frame CornerRadius="10"
+                   BackgroundColor="#98ABEE"
+                   
+            MinimumWidthRequest="320"
+            MaximumWidthRequest="600"
+    BorderColor="#260272"
+    HasShadow="True"
+    Padding="5" 
+                   Margin="20">
+            <Image Source="adduser.png" HeightRequest="305" WidthRequest="406"
+                       Margin="20">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" />
+                </Image.GestureRecognizers>
+            </Image>
+
+
+
+        </Frame>
+        <Frame CornerRadius="10"
+            MinimumWidthRequest="320"
+            MaximumWidthRequest="600"
+                   BackgroundColor="IndianRed"
+                BorderColor="#260272"
+                HasShadow="True"
+                Padding="5"
+                   Margin="20">
+            <Image Source="removeuser.png" HeightRequest="255" WidthRequest="306"
+                       Margin="20">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" />
+                </Image.GestureRecognizers>
+            </Image>
+        </Frame>
+        <Frame  CornerRadius="10"
+                    BackgroundColor="#98ABEE"
+        MinimumWidthRequest="320"
+        MaximumWidthRequest="600"
+        BorderColor="#260272"
+                    Margin="20"
+        HasShadow="True"
+        Padding="5">
+
+            <Image Source="updateuser.png" HeightRequest="255" WidthRequest="306" >
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" />
+                </Image.GestureRecognizers>
+            </Image>
+        </Frame>
+        <Frame CornerRadius="10"
+        MinimumWidthRequest="320"
+        MaximumWidthRequest="600"
+                   BackgroundColor="#98ABEE"
+        BorderColor="#260272"
+        HasShadow="True"
+        Padding="5"
+                   Margin="20">
+            <Image Source="viewuser.png" HeightRequest="255" WidthRequest="306" >
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" />
+                </Image.GestureRecognizers>
+            </Image>
+        </Frame>
+    </VerticalStackLayout>
+</ContentPage>

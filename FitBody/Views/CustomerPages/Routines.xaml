@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FitBody.Views.CustomerPages.Routines"
+             Title="Routines">
+
+    <ContentPage.Resources>
+        <LinearGradientBrush x:Key="BackgroundGradient">
+            <GradientStop Color="#080CFE" Offset="0" />
+            <GradientStop Color="#4143c5" Offset="1" />
+        </LinearGradientBrush>
+
+        <LinearGradientBrush x:Key="BackgroundGradient2">
+            <GradientStop Color="#10237C" Offset="0" />
+            <GradientStop Color="#030E3E" Offset="1" />
+        </LinearGradientBrush>
+
+        <LinearGradientBrush x:Key="BackgroundGradient3">
+            <GradientStop Color="#260272" Offset="0" />
+            <GradientStop Color="#080CFE" Offset="1" />
+        </LinearGradientBrush>
+    </ContentPage.Resources>
+
+    <ScrollView>
+        <VerticalStackLayout VerticalOptions="CenterAndExpand">
+            <CollectionView x:Name="routineCollection"
+                            SelectionMode="Single"
+                            SelectionChanged="OnItemSelected">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Frame BorderColor="Blue"
+                               BackgroundColor="Transparent"
+                               CornerRadius="5"
+                               Padding="15"
+                               Margin="20">
+                            <Grid ColumnDefinitions=".20*, .75*" BackgroundColor="Transparent" >
+                                <Label Text="{Binding Id}"
+                                       FontSize="Large"
+                                       Grid.Column="0"
+                                       FontAttributes="Bold"
+                                       FontFamily="PoppinsSemiBold"
+                                       TextColor="MidnightBlue"
+                                       HorizontalOptions="End"
+                                       Margin="20, 0"/>
+
+                                <Label Text="{Binding Name}"
+                                       FontSize="25"
+                                       FontFamily="PoppinsSemiBold"
+                                       Grid.Column="1" 
+                                       VerticalOptions="Center"/>
+                            </Grid>
+                        </Frame>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+            <Frame x:Name="routineFrame"
+                   Margin="100" 
+                   Background="{StaticResource BackgroundGradient}" 
+                   IsVisible="false"
+                   MinimumHeightRequest="600">
+                
+                <VerticalStackLayout VerticalOptions="Center" HorizontalOptions="Center" >
+                    <Label x:Name="routineName" FontFamily="PoppinsSemiBold" FontSize="Large" HorizontalOptions="Center" TextColor="White"/>
+                    <Label Text="With this routine you will achieve your fitness goals!" FontFamily="PoppinsRegular" FontSize="15" HorizontalOptions="Center" TextColor="#E1E1E1"/>
+
+                    <Grid Margin="0, 50" ColumnSpacing="30">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+
+                        <Label Grid.Column="0" Grid.Row="0" Text="SUN" HorizontalOptions="Center" FontSize="Medium" FontFamily="PoppinsSemiBold" TextColor="White"/>
+                        <Label Grid.Column="1" Grid.Row="0" Text="MON" HorizontalOptions="Center" FontSize="Medium" FontFamily="PoppinsSemiBold" TextColor="White"/>
+                        <Label Grid.Column="2" Grid.Row="0" Text="TUE" HorizontalOptions="Center" FontSize="Medium" FontFamily="PoppinsSemiBold" TextColor="White"/>
+                        <Label Grid.Column="3" Grid.Row="0" Text="WED" HorizontalOptions="Center" FontSize="Medium" FontFamily="PoppinsSemiBold" TextColor="White"/>
+                        <Label Grid.Column="4" Grid.Row="0" Text="THU" HorizontalOptions="Center" FontSize="Medium" FontFamily="PoppinsSemiBold" TextColor="White"/>
+                        <Label Grid.Column="5" Grid.Row="0" Text="FRI" HorizontalOptions="Center" FontSize="Medium" FontFamily="PoppinsSemiBold" TextColor="White"/>
+                        <Label Grid.Column="6" Grid.Row="0" Text="SAT" HorizontalOptions="Center" FontSize="Medium" FontFamily="PoppinsSemiBold" TextColor="White"/>
+
+                        <Label x:Name="sunday" Grid.Column="0" Grid.Row="1" HorizontalOptions="Center" FontSize="Body" FontFamily="PoppinsRegular" TextColor="White"/>
+                        <Label x:Name="monday" Grid.Column="1" Grid.Row="1" HorizontalOptions="Center" FontSize="Body" FontFamily="PoppinsRegular" TextColor="White"/>
+                        <Label x:Name="tuesday" Grid.Column="2" Grid.Row="1" HorizontalOptions="Center" FontSize="Body" FontFamily="PoppinsRegular" TextColor="White"/>
+                        <Label x:Name="wednesday" Grid.Column="3" Grid.Row="1" HorizontalOptions="Center" FontSize="Body" FontFamily="PoppinsRegular" TextColor="White"/>
+                        <Label x:Name="thursday" Grid.Column="4" Grid.Row="1" HorizontalOptions="Center" FontSize="Body" FontFamily="PoppinsRegular" TextColor="White"/>
+                        <Label x:Name="friday" Grid.Column="5" Grid.Row="1" HorizontalOptions="Center" FontSize="Body" FontFamily="PoppinsRegular" TextColor="White"/>
+                        <Label x:Name="saturday" Grid.Column="6" Grid.Row="1" HorizontalOptions="Center" FontSize="Body" FontFamily="PoppinsRegular" TextColor="White"/>
+
+                    </Grid>
+
+                    <Button Text="Select Routine" FontFamily="PoppinsSemiBold" BackgroundColor="White" TextColor="MidnightBlue" Clicked="OnRoutineSelected"></Button>
+                    <Label Text="OR" HorizontalOptions="Center" FontFamily="PoppinsSemiBold" FontSize="17" Margin="0, 20" TextColor="White"/>
+                    <Button Text="Back to Routines Page" FontFamily="PoppinsSemiBold" BackgroundColor="#030E3E" BorderWidth="1" BorderColor="White" Margin="0, 0, 0, 20" Clicked="OnBackClicked" ></Button>
+
+                </VerticalStackLayout>
+            </Frame>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

@@ -1,0 +1,352 @@
+﻿[
+	{
+		"Id": 1,
+		"Name": "Push-ups",
+		"Equipment": "None",
+		"Repetitions": "15",
+		"MuscleGroup": "Chest, Arms"
+	},
+	{
+		"Id": 2,
+		"Name": "Bicep Curls",
+		"Equipment": "Dumbbells",
+		"Repetitions": "12",
+		"MuscleGroup": "Arms"
+	},
+	{
+		"Id": 3,
+		"Name": "Deadlifts",
+		"Equipment": "Barbell",
+		"Repetitions": "8",
+		"MuscleGroup": "Back, Legs"
+	},
+	{
+		"Id": 4,
+		"Name": "Crunches",
+		"Equipment": "None",
+		"Repetitions": "20",
+		"MuscleGroup": "Abs"
+	},
+	{
+		"Id": 5,
+		"Name": "Leg Press",
+		"Equipment": "Leg Press Machine",
+		"Repetitions": "15",
+		"MuscleGroup": "Legs"
+	},
+	{
+		"Id": 6,
+		"Name": "Tricep Dips",
+		"Equipment": "Parallel Bars",
+		"Repetitions": "12",
+		"MuscleGroup": "Arms, Shoulders"
+	},
+	{
+		"Id": 7,
+		"Name": "Lunges",
+		"Equipment": "None",
+		"Repetitions": "16",
+		"MuscleGroup": "Legs"
+	},
+	{
+		"Id": 8,
+		"Name": "Shoulder Press",
+		"Equipment": "Dumbbells",
+		"Repetitions": "10",
+		"MuscleGroup": "Shoulders"
+	},
+	{
+		"Id": 9,
+		"Name": "Plank",
+		"Equipment": "None",
+		"Repetitions": "60 seconds",
+		"MuscleGroup": "Core"
+	},
+	{
+		"Id": 10,
+		"Name": "Calf Raises",
+		"Equipment": "Bodyweight",
+		"Repetitions": "15",
+		"MuscleGroup": "Calves"
+	},
+	{
+		"Id": 11,
+		"Name": "Russian Twists",
+		"Equipment": "Weighted Ball",
+		"Repetitions": "20",
+		"MuscleGroup": "Core, Obliques"
+	},
+	{
+		"Id": 12,
+		"Name": "Lat Pulldowns",
+		"Equipment": "Cable Machine",
+		"Repetitions": "12",
+		"MuscleGroup": "Back, Arms"
+	},
+	{
+		"Id": 13,
+		"Name": "Hammer Curls",
+		"Equipment": "Dumbbells",
+		"Repetitions": "10",
+		"MuscleGroup": "Arms"
+	},
+	{
+		"Id": 14,
+		"Name": "Romanian Deadlifts",
+		"Equipment": "Barbell",
+		"Repetitions": "12",
+		"MuscleGroup": "Hamstrings, Lower back"
+	},
+	{
+		"Id": 15,
+		"Name": "Side Plank",
+		"Equipment": "None",
+		"Repetitions": "30 seconds",
+		"MuscleGroup": "Core, Obliques"
+	},
+	{
+		"Id": 16,
+		"Name": "Chest Flyes",
+		"Equipment": "Dumbbells",
+		"Repetitions": "12",
+		"MuscleGroup": "Chest"
+	},
+	{
+		"Id": 17,
+		"Name": "Step-ups",
+		"Equipment": "Box",
+		"Repetitions": "10 each leg",
+		"MuscleGroup": "Legs"
+	},
+	{
+		"Id": 18,
+		"Name": "Dumbbell Rows",
+		"Equipment": "Dumbbells",
+		"Repetitions": "12",
+		"MuscleGroup": "Back, Arms"
+	},
+	{
+		"Id": 19,
+		"Name": "Mountain Climbers",
+		"Equipment": "None",
+		"Repetitions": "20 each leg",
+		"MuscleGroup": "Core, Cardio"
+	},
+	{
+		"Id": 20,
+		"Name": "Leg Raises",
+		"Equipment": "None",
+		"Repetitions": "15",
+		"MuscleGroup": "Abs, Hip Flexors"
+	},
+	{
+		"Id": 21,
+		"Name": "Bicycle Crunches",
+		"Equipment": "None",
+		"Repetitions": "20",
+		"MuscleGroup": "Abs, Obliques"
+	},
+	{
+		"Id": 22,
+		"Name": "Seated Shoulder Press",
+		"Equipment": "Dumbbells",
+		"Repetitions": "12",
+		"MuscleGroup": "Shoulders"
+	},
+	{
+		"Id": 23,
+		"Name": "Squat Jumps",
+		"Equipment": "None",
+		"Repetitions": "10",
+		"MuscleGroup": "Legs, Cardio"
+	},
+	{
+		"Id": 24,
+		"Name": "Dumbbell Bench Press",
+		"Equipment": "Dumbbells, Bench",
+		"Repetitions": "12",
+		"MuscleGroup": "Chest, Arms"
+	},
+	{
+		"Id": 25,
+		"Name": "Burpees",
+		"Equipment": "None",
+		"Repetitions": "10",
+		"MuscleGroup": "Full Body, Cardio"
+	},
+	{
+		"Id": 26,
+		"Name": "Incline Bench Press",
+		"Equipment": "Barbell, Incline Bench",
+		"Repetitions": "12",
+		"MuscleGroup": "Chest, Arms"
+	},
+	{
+		"Id": 27,
+		"Name": "Leg Curl",
+		"Equipment": "Leg Curl Machine",
+		"Repetitions": "15",
+		"MuscleGroup": "Hamstrings"
+	},
+	{
+		"Id": 28,
+		"Name": "Flutter Kicks",
+		"Equipment": "None",
+		"Repetitions": "20",
+		"MuscleGroup": "Abs, Lower back"
+	},
+	{
+		"Id": 29,
+		"Name": "Box Jumps",
+		"Equipment": "Box",
+		"Repetitions": "10",
+		"MuscleGroup": "Legs, Cardio"
+	},
+	{
+		"Id": 30,
+		"Name": "Dumbbell Lateral Raises",
+		"Equipment": "Dumbbells",
+		"Repetitions": "12",
+		"MuscleGroup": "Shoulders"
+	},
+	{
+		"Id": 31,
+		"Name": "Wall Sit",
+		"Equipment": "None",
+		"Repetitions": "60 seconds",
+		"MuscleGroup": "Legs, Core"
+	},
+	{
+		"Id": 32,
+		"Name": "Dumbbell Pullovers",
+		"Equipment": "Dumbbells",
+		"Repetitions": "12",
+		"MuscleGroup": "Back, Chest"
+	},
+	{
+		"Id": 33,
+		"Name": "Side Leg Raises",
+		"Equipment": "None",
+		"Repetitions": "15",
+		"MuscleGroup": "Legs, Hip Abductors"
+	},
+	{
+		"Id": 34,
+		"Name": "Russian Twists",
+		"Equipment": "Weighted Ball",
+		"Repetitions": "20",
+		"MuscleGroup": "Core, Obliques"
+	},
+	{
+		"Id": 35,
+		"Name": "Tricep Kickbacks",
+		"Equipment": "Dumbbells",
+		"Repetitions": "12",
+		"MuscleGroup": "Arms"
+	},
+	{
+		"Id": 36,
+		"Name": "Reverse Crunches",
+		"Equipment": "None",
+		"Repetitions": "20",
+		"MuscleGroup": "Abs"
+	},
+	{
+		"Id": 37,
+		"Name": "High Knees",
+		"Equipment": "None",
+		"Repetitions": "20 each leg",
+		"MuscleGroup": "Cardio"
+	},
+	{
+		"Id": 38,
+		"Name": "Front Squats",
+		"Equipment": "Barbell",
+		"Repetitions": "10",
+		"MuscleGroup": "Legs"
+	},
+	{
+		"Id": 39,
+		"Name": "Dumbbell Front Raises",
+		"Equipment": "Dumbbells",
+		"Repetitions": "12",
+		"MuscleGroup": "Shoulders"
+	},
+	{
+		"Id": 40,
+		"Name": "Plank with Leg Lifts",
+		"Equipment": "None",
+		"Repetitions": "30 seconds",
+		"MuscleGroup": "Core, Glutes"
+	},
+	{
+		"Id": 41,
+		"Name": "Lateral Lunges",
+		"Equipment": "None",
+		"Repetitions": "10 each leg",
+		"MuscleGroup": "Legs, Glutes"
+	},
+	{
+		"Id": 42,
+		"Name": "Dumbbell Skull Crushers",
+		"Equipment": "Dumbbells",
+		"Repetitions": "12",
+		"MuscleGroup": "Arms"
+	},
+	{
+		"Id": 43,
+		"Name": "Seated Leg Press",
+		"Equipment": "Leg Press Machine",
+		"Repetitions": "12",
+		"MuscleGroup": "Legs"
+	},
+	{
+		"Id": 44,
+		"Name": "Kettlebell Swings",
+		"Equipment": "Kettlebell",
+		"Repetitions": "20",
+		"MuscleGroup": "Full Body, Cardio"
+	},
+	{
+		"Id": 45,
+		"Name": "Flutter Kicks",
+		"Equipment": "None",
+		"Repetitions": "30 seconds",
+		"MuscleGroup": "Abs, Lower back"
+	},
+	{
+		"Id": 46,
+		"Name": "Barbell Rows",
+		"Equipment": "Barbell",
+		"Repetitions": "12",
+		"MuscleGroup": "Back, Arms"
+	},
+	{
+		"Id": 47,
+		"Name": "Step Mill",
+		"Equipment": "Step Mill Machine",
+		"Repetitions": "10 minutes",
+		"MuscleGroup": "Cardio"
+	},
+	{
+		"Id": 48,
+		"Name": "Side Plank with Leg Lifts",
+		"Equipment": "None",
+		"Repetitions": "20 seconds each side",
+		"MuscleGroup": "Core, Glutes"
+	},
+	{
+		"Id": 49,
+		"Name": "Decline Bench Press",
+		"Equipment": "Barbell, Decline Bench",
+		"Repetitions": "12",
+		"MuscleGroup": "Chest, Arms"
+	},
+	{
+		"Id": 50,
+		"Name": "Jump Rope",
+		"Equipment": "Jump Rope",
+		"Repetitions": "2 minutes",
+		"MuscleGroup": "Cardio"
+	}
+]

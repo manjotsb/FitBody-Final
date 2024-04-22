@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FitBody.Views.CreateCustomerDetails">
+    <ContentPage.Resources>
+        <LinearGradientBrush x:Key="BackgroundGradient">
+            <GradientStop Color="#080CFE" Offset="0" />
+            <GradientStop Color="#4143c5" Offset="1" />
+        </LinearGradientBrush>
+
+        <LinearGradientBrush x:Key="BackgroundGradient2">
+            <GradientStop Color="#10237C" Offset="0" />
+            <GradientStop Color="#030E3E" Offset="1" />
+        </LinearGradientBrush>
+
+        <LinearGradientBrush x:Key="BackgroundGradient3">
+            <GradientStop Color="#260272" Offset="0" />
+            <GradientStop Color="#080CFE" Offset="1" />
+        </LinearGradientBrush>
+    </ContentPage.Resources>
+    
+    <StackLayout>
+        <Grid ColumnDefinitions=".22*, .22*, .22*, .22*"
+          RowDefinitions="7"
+          Margin="20, 40">
+            <BoxView x:Name="col1" Grid.Column="0" BackgroundColor="#080CFE" Margin="2"/>
+            <BoxView x:Name="col2" Grid.Column="1" BackgroundColor="Transparent" Margin="2"/>
+            <BoxView x:Name="col3" Grid.Column="2" BackgroundColor="Transparent" Margin="2"/>
+            <BoxView x:Name="col4" Grid.Column="3" BackgroundColor="Transparent" Margin="2"/>
+        </Grid>
+
+        <VerticalStackLayout VerticalOptions="Center" HorizontalOptions="Center">
+
+            <VerticalStackLayout x:Name="stack1" Margin="100">
+                <Label Text="Age" FontFamily="PoppinsSemiBold" FontSize="Header" Margin="0, 100"/>
+                <Picker x:Name="pickerYears" HeightRequest="100" FontSize="30" FontFamily="PoppinsRegular" SelectedIndexChanged="OnPickerSelected"/>
+            </VerticalStackLayout>
+
+            <VerticalStackLayout x:Name="stack2" Margin="100" IsVisible="False">
+                <Label Text="Gender" FontFamily="PoppinsSemiBold" FontSize="Header" Margin="0, 50"/>
+                <Picker x:Name="pickerGender" HeightRequest="100" FontSize="30" FontFamily="PoppinsRegular" SelectedIndexChanged="OnPickerSelected">
+                    <Picker.ItemsSource>
+                        <x:Array Type="{x:Type x:String}">
+                            <x:String>Male</x:String>
+                            <x:String>Female</x:String>
+                            <x:String>Prefer not to say</x:String>
+                        </x:Array>
+                    </Picker.ItemsSource>
+                </Picker>
+            </VerticalStackLayout>
+
+            <VerticalStackLayout x:Name="stack3" Margin="100" IsVisible="False">
+                <Label Text="Height" FontFamily="PoppinsSemiBold" FontSize="Header" Margin="0, 100"/>
+                <Picker x:Name="pickerHeight" HeightRequest="100" FontSize="30" FontFamily="PoppinsRegular" SelectedIndexChanged="OnPickerSelected"/>
+            </VerticalStackLayout>
+
+            <VerticalStackLayout x:Name="stack4" Margin="100" IsVisible="False">
+                <Label Text="Weight" FontFamily="PoppinsSemiBold" FontSize="Header" Margin="0, 100"/>
+                <Picker x:Name="pickerWeight" HeightRequest="100" FontSize="30" FontFamily="PoppinsRegular" SelectedIndexChanged="OnPickerSelected"/>
+            </VerticalStackLayout>
+
+            <HorizontalStackLayout HorizontalOptions="Center">
+                <Button Text="Back" FontFamily="PoppinsSemiBold" WidthRequest="100" Margin="20, 0" Background="{StaticResource BackgroundGradient2}" Clicked="OnBackClicked"></Button>
+                <Button x:Name="continueButton" Text="Continue" IsEnabled="False" FontFamily="PoppinsSemiBold" WidthRequest="100" Background="#C8C8C8" TextColor="White" Clicked="OnContinueClicked" Margin="20, 0"></Button>
+            </HorizontalStackLayout>
+
+        </VerticalStackLayout>
+    </StackLayout>
+</ContentPage>

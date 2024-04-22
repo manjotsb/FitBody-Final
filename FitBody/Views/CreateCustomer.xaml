@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FitBody.Views.CreateCustomer">
+
+    <ContentPage.Resources>
+        <LinearGradientBrush x:Key="BackgroundGradient">
+            <GradientStop Color="#080CFE" Offset="0" />
+            <GradientStop Color="#4143c5" Offset="1" />
+        </LinearGradientBrush>
+
+        <LinearGradientBrush x:Key="BackgroundGradient2">
+            <GradientStop Color="#10237C" Offset="0" />
+            <GradientStop Color="#030E3E" Offset="1" />
+        </LinearGradientBrush>
+
+        <LinearGradientBrush x:Key="BackgroundGradient3">
+            <GradientStop Color="#260272" Offset="0" />
+            <GradientStop Color="#080CFE" Offset="1" />
+        </LinearGradientBrush>
+    </ContentPage.Resources>
+
+    <Frame Margin="100" Background="{StaticResource BackgroundGradient}">
+        <VerticalStackLayout VerticalOptions="Center" HorizontalOptions="Center" >
+            <Label Text="CREATE AN ACCOUNT" FontFamily="PoppinsSemiBold" FontAttributes="Bold" FontSize="Large" HorizontalOptions="Center" TextColor="White"/>
+            <Label Text="Welcome to FitBody!" FontFamily="PoppinsRegular" FontSize="15" HorizontalOptions="Center" TextColor="#E1E1E1"/>
+            <Frame Margin="-60, 20">
+                <Grid ColumnDefinitions=".50*, .50*" RowDefinitions=".50*, .50*" BackgroundColor="White" Padding="10, 15" >
+                    <HorizontalStackLayout Grid.Column="0" Grid.Row="0" Margin="2">
+                        <Image
+                            Source="id.png"
+                            Margin="0, 0, 5, 30"/>
+                        <Entry
+                            x:Name="username"
+                            Placeholder="Username"
+                            FontFamily="PoppinsRegular"
+                            FontSize="13"
+                            Margin="0, 0, 5, 30" 
+                            HeightRequest="30"
+                            WidthRequest="165"
+                            BackgroundColor="#C8C8C8"/>
+                    </HorizontalStackLayout>
+                    <HorizontalStackLayout Grid.Column="0" Grid.Row="1" Margin="2">
+                        <Image
+                            Source="password.png"
+                            Margin="0, 0, 5, 30"/>
+                        <Entry 
+                            x:Name="password"                           
+                            Placeholder="Password"
+                            FontFamily="PoppinsRegular"
+                            FontSize="13"
+                            Margin="0, 0, 5, 30" 
+                            HeightRequest="30"
+                            WidthRequest="165"
+                            BackgroundColor="#C8C8C8"/>
+                    </HorizontalStackLayout>
+
+                    <HorizontalStackLayout Grid.Column="1" Grid.Row="0" Margin="2">
+                        <Image
+                            Source="user.png"
+                            Margin="0, 0, 5, 30"/>
+                        <Entry 
+                            x:Name="name"
+                            Placeholder="Name"
+                            FontFamily="PoppinsRegular"
+                            FontSize="13"
+                            Margin="0, 0, 5, 30" 
+                            HeightRequest="30"
+                            WidthRequest="165"
+                            BackgroundColor="#C8C8C8"/>
+                    </HorizontalStackLayout>
+
+                    <HorizontalStackLayout Grid.Column="1" Grid.Row="1" Margin="2">
+                        <Image
+                            Source="mail.png"
+                            Margin="0, 0, 5, 30"/>
+                        <Entry 
+                            x:Name="email"
+                            Placeholder="Email"
+                            FontFamily="PoppinsRegular"
+                            FontSize="13"
+                            Margin="0, 0, 5, 30" 
+                            HeightRequest="31"
+                            WidthRequest="165"
+                            BackgroundColor="#C8C8C8"/>
+                    </HorizontalStackLayout>
+                </Grid>
+            </Frame>
+            <Button Text="Create Account" FontFamily="PoppinsSemiBold" BackgroundColor="White" TextColor="MidnightBlue" Clicked="OnCreateClicked"></Button>
+            <Label Text="OR" HorizontalOptions="Center" FontFamily="PoppinsSemiBold" FontSize="17" Margin="0, 20" TextColor="White"/>
+
+            <Button Text="Back to Login Page" FontFamily="PoppinsSemiBold" BackgroundColor="#030E3E" BorderWidth="1" BorderColor="White" Clicked="OnBackClicked"></Button>
+
+        </VerticalStackLayout>
+    </Frame>
+</ContentPage>

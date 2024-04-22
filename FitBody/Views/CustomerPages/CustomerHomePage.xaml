@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FitBody.Views.CustomerPages.CustomerHomePage">
+
+    <ContentPage.Resources>
+        <LinearGradientBrush x:Key="BackgroundGradient">
+            <GradientStop Color="#080CFE" Offset="0" />
+            <GradientStop Color="#4143c5" Offset="1" />
+        </LinearGradientBrush>
+
+        <LinearGradientBrush x:Key="BackgroundGradient2">
+            <GradientStop Color="#CDE1FE" Offset="0" />
+            <GradientStop Color="#080CFE" Offset="1" />
+        </LinearGradientBrush>
+
+        <LinearGradientBrush x:Key="BackgroundGradient3">
+            <GradientStop Color="#260272" Offset="0" />
+            <GradientStop Color="#080CFE" Offset="1" />
+        </LinearGradientBrush>
+
+        <Style x:Key="WorkoutButtonStyle" TargetType="Button">
+            <Setter Property="FontFamily" Value="PoppinsSemiBold" />
+            <Setter Property="FontSize" Value="Body" />
+            <Setter Property="TextColor" Value="White" />
+            <Setter Property="CornerRadius" Value="5" />
+            <Setter Property="WidthRequest" Value="140" />
+            <Setter Property="HeightRequest" Value="60" />
+            <Setter Property="Margin" Value="5" />
+            <Setter Property="Background" Value="{StaticResource BackgroundGradient}" />
+        </Style>
+
+    </ContentPage.Resources>
+
+    <ScrollView>
+        <VerticalStackLayout Margin="70, 0">
+            
+                <Label x:Name="welcomeLabel" FontFamily="PoppinsRegular" FontSize="Large" Margin="0, 20, 0, 40"/>
+                <Label Text="Discover Workouts" FontFamily="PoppinsSemiBold" FontSize="Large" />
+                
+                <HorizontalStackLayout Spacing="10" Padding="10">
+                    <Button Text="Upper Body" Style="{StaticResource WorkoutButtonStyle}"/>
+                    <Button Text="Lower Body" Style="{StaticResource WorkoutButtonStyle}"/>
+                    <Button Text="Full Body" Style="{StaticResource WorkoutButtonStyle}"/>
+                    <Button Text="Cardio" Style="{StaticResource WorkoutButtonStyle}"/>
+                    <Button Text="Beginner" Style="{StaticResource WorkoutButtonStyle}"/>
+                    <Button Text="Intermediate" Style="{StaticResource WorkoutButtonStyle}"/>
+                    <Button Text="Advanced" Style="{StaticResource WorkoutButtonStyle}"/>
+                </HorizontalStackLayout>
+
+                <Label x:Name="routineLabel" FontFamily="PoppinsSemiBold" FontSize="Large" Margin="0, 50, 0, 0"/>
+
+                <Frame Margin="0, 30" Background="{StaticResource BackgroundGradient}">
+                    <VerticalStackLayout>
+
+                        <Label x:Name="todaysWorkoutLabel" FontFamily="PoppinsSemiBold" FontSize="Large" Margin="30, 50, 0, 0" TextColor="White"/>
+                        <Grid Margin="0, 20" x:Name="workoutDetails" ColumnDefinitions=".50*, .50*" RowDefinitions=".75*, .20*" HeightRequest="210" IsVisible="False">
+                            <VerticalStackLayout Grid.Column="0" Grid.Row="0" Margin="30, 20">
+                                <Label x:Name="workoutName" FontFamily="PoppinsRegular" FontSize="Medium" TextColor="White"/>
+                                <Label x:Name="workoutDifficulty" FontFamily="PoppinsRegular" FontSize="Medium" TextColor="White"/>
+                            </VerticalStackLayout>
+
+                            <VerticalStackLayout Grid.Column="1" Grid.Row="0" Margin="30, 20">
+                                <Label x:Name="workoutExercises"  FontFamily="PoppinsRegular" FontSize="Medium" TextColor="White"/>
+                                <Label x:Name="workoutCategory" FontFamily="PoppinsRegular" FontSize="Medium" TextColor="White"/>
+                            </VerticalStackLayout>
+
+                            <Button x:Name="startWorkoutButton" Text="Start Workout" BackgroundColor="White" FontFamily="PoppinsSemiBold" TextColor="MidnightBlue" HorizontalOptions="Center" Grid.Row="1" Grid.ColumnSpan="2" Clicked="OnStartClicked"/>
+                        </Grid>
+                    </VerticalStackLayout>
+                </Frame>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

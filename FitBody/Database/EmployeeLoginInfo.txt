@@ -1,0 +1,9 @@
+﻿EMPLOYEES LOGIN INFORMATION
+
+#1001
+Email = "juannova@employee.com",
+Password = "juannova"
+
+#1002
+Email = "robinsuthar@employee.com",
+Password = "robinsuthar"

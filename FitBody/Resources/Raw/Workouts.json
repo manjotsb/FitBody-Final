@@ -1,0 +1,220 @@
+﻿[
+	{
+		"Id": 0,
+		"Name": "Rest and Recovery Day",
+		"ExerciseIds": [],
+		"Difficulty": "None",
+		"Category": "FullBody"
+	},
+	{
+		"Id": 1,
+		"Name": "Upper Body Strength",
+		"ExerciseIds": [ 1, 2, 8, 12, 22, 25, 36 ],
+		"Difficulty": "Intermediate",
+		"Category": "UpperBody"
+	},
+	{
+		"Id": 2,
+		"Name": "Leg Day",
+		"ExerciseIds": [ 3, 5, 7, 17, 23, 27, 41 ],
+		"Difficulty": "Intermediate",
+		"Category": "LowerBody"
+	},
+	{
+		"Id": 3,
+		"Name": "Core Workout",
+		"ExerciseIds": [ 4, 9, 11, 15, 20, 35, 48 ],
+		"Difficulty": "Intermediate",
+		"Category": "Core"
+	},
+	{
+		"Id": 4,
+		"Name": "Chest and Triceps",
+		"ExerciseIds": [ 1, 6, 16, 24, 26, 33, 49 ],
+		"Difficulty": "Intermediate",
+		"Category": "UpperBody"
+	},
+	{
+		"Id": 5,
+		"Name": "Back and Biceps",
+		"ExerciseIds": [ 3, 12, 18, 22, 36, 46, 49 ],
+		"Difficulty": "Intermediate",
+		"Category": "UpperBody"
+	},
+	{
+		"Id": 6,
+		"Name": "Full Body Circuit",
+		"ExerciseIds": [ 1, 2, 5, 9, 14, 28, 44 ],
+		"Difficulty": "Intermediate",
+		"Category": "FullBody"
+	},
+	{
+		"Id": 7,
+		"Name": "Cardio Blast",
+		"ExerciseIds": [ 19, 23, 29, 37, 45, 47, 50 ],
+		"Difficulty": "Intermediate",
+		"Category": "Cardio"
+	},
+	{
+		"Id": 8,
+		"Name": "Shoulder Pump",
+		"ExerciseIds": [ 8, 22, 30, 32, 39, 42, 44 ],
+		"Difficulty": "Intermediate",
+		"Category": "UpperBody"
+	},
+	{
+		"Id": 9,
+		"Name": "Lower Body Strength",
+		"ExerciseIds": [ 3, 5, 17, 27, 31, 38, 43 ],
+		"Difficulty": "Intermediate",
+		"Category": "LowerBody"
+	},
+	{
+		"Id": 10,
+		"Name": "Total Body Burn",
+		"ExerciseIds": [ 1, 4, 10, 13, 20, 21, 34 ],
+		"Difficulty": "Intermediate",
+		"Category": "FullBody"
+	},
+	{
+		"Id": 11,
+		"Name": "Beginner Upper Body",
+		"ExerciseIds": [ 1, 2, 8, 16, 24, 38 ],
+		"Difficulty": "Beginner",
+		"Category": "UpperBody"
+	},
+	{
+		"Id": 12,
+		"Name": "Easy Leg Day",
+		"ExerciseIds": [ 3, 5, 7, 17, 23 ],
+		"Difficulty": "Beginner",
+		"Category": "LowerBody"
+	},
+	{
+		"Id": 13,
+		"Name": "Core Basics",
+		"ExerciseIds": [ 4, 9, 15, 20 ],
+		"Difficulty": "Beginner",
+		"Category": "Core"
+	},
+	{
+		"Id": 14,
+		"Name": "Starter Chest and Triceps",
+		"ExerciseIds": [ 1, 6, 16, 26 ],
+		"Difficulty": "Beginner",
+		"Category": "UpperBody"
+	},
+	{
+		"Id": 15,
+		"Name": "Back and Biceps Intro",
+		"ExerciseIds": [ 3, 12, 18, 22 ],
+		"Difficulty": "Beginner",
+		"Category": "UpperBody"
+	},
+	{
+		"Id": 16,
+		"Name": "Simple Full Body",
+		"ExerciseIds": [ 1, 2, 5, 9, 28 ],
+		"Difficulty": "Beginner",
+		"Category": "FullBody"
+	},
+	{
+		"Id": 17,
+		"Name": "Low Impact Cardio",
+		"ExerciseIds": [ 23, 29, 37, 45, 50 ],
+		"Difficulty": "Beginner",
+		"Category": "Cardio"
+	},
+	{
+		"Id": 18,
+		"Name": "Shoulder Starter",
+		"ExerciseIds": [ 8, 22, 30, 42 ],
+		"Difficulty": "Beginner",
+		"Category": "UpperBody"
+	},
+	{
+		"Id": 19,
+		"Name": "Leg Strength for Newbies",
+		"ExerciseIds": [ 3, 5, 17, 27 ],
+		"Difficulty": "Beginner",
+		"Category": "LowerBody"
+	},
+	{
+		"Id": 20,
+		"Name": "Total Beginner Workout",
+		"ExerciseIds": [ 1, 4, 13, 20, 21 ],
+		"Difficulty": "Beginner",
+		"Category": "FullBody"
+	},
+	{
+		"Id": 21,
+		"Name": "Advanced Upper Body Blast",
+		"ExerciseIds": [ 1, 2, 8, 12, 16, 22, 24, 32, 36 ],
+		"Difficulty": "Advanced",
+		"Category": "UpperBody"
+	},
+	{
+		"Id": 22,
+		"Name": "Intense Leg Day",
+		"ExerciseIds": [ 3, 5, 7, 17, 23, 27, 31, 38 ],
+		"Difficulty": "Advanced",
+		"Category": "LowerBody"
+	},
+	{
+		"Id": 23,
+		"Name": "Core Shredder",
+		"ExerciseIds": [ 4, 9, 11, 15, 20, 35, 40, 48 ],
+		"Difficulty": "Advanced",
+		"Category": "Core"
+	},
+	{
+		"Id": 24,
+		"Name": "Killer Chest and Triceps",
+		"ExerciseIds": [ 1, 6, 16, 24, 26, 33, 42, 49 ],
+		"Difficulty": "Advanced",
+		"Category": "UpperBody"
+	},
+	{
+		"Id": 25,
+		"Name": "Back and Biceps Beast",
+		"ExerciseIds": [ 3, 12, 18, 22, 36, 46, 49 ],
+		"Difficulty": "Advanced",
+		"Category": "UpperBody"
+	},
+	{
+		"Id": 26,
+		"Name": "Ultimate Full Body Burn",
+		"ExerciseIds": [ 1, 2, 5, 9, 14, 21, 28, 34, 44 ],
+		"Difficulty": "Advanced",
+		"Category": "FullBody"
+	},
+	{
+		"Id": 27,
+		"Name": "High Intensity Cardio Challenge",
+		"ExerciseIds": [ 19, 23, 29, 37, 41, 45, 47, 50 ],
+		"Difficulty": "Advanced",
+		"Category": "Cardio"
+	},
+	{
+		"Id": 28,
+		"Name": "Shoulder Mass Builder",
+		"ExerciseIds": [ 8, 22, 30, 32, 39, 42, 44, 49 ],
+		"Difficulty": "Advanced",
+		"Category": "UpperBody"
+	},
+	{
+		"Id": 29,
+		"Name": "Legs of Steel",
+		"ExerciseIds": [ 3, 5, 17, 27, 31, 38, 43, 47, 48 ],
+		"Difficulty": "Advanced",
+		"Category": "LowerBody"
+	},
+	{
+		"Id": 30,
+		"Name": "Total Advanced Workout",
+		"ExerciseIds": [ 1, 4, 10, 13, 20, 21, 34, 40, 46 ],
+		"Difficulty": "Advanced",
+		"Category": "FullBody"
+	}
+]
+

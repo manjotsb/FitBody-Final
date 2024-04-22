@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FitBody.Views.StartWorkout">
+    
+    <ContentPage.Resources>
+        <LinearGradientBrush x:Key="BackgroundGradient">
+            <GradientStop Color="#080CFE" Offset="0" />
+            <GradientStop Color="#4143c5" Offset="1" />
+        </LinearGradientBrush>
+
+        <LinearGradientBrush x:Key="BackgroundGradient2">
+            <GradientStop Color="#10237C" Offset="0" />
+            <GradientStop Color="#030E3E" Offset="1" />
+        </LinearGradientBrush>
+
+        <LinearGradientBrush x:Key="BackgroundGradient3">
+            <GradientStop Color="#260272" Offset="0" />
+            <GradientStop Color="#080CFE" Offset="1" />
+        </LinearGradientBrush>
+    </ContentPage.Resources>
+
+    <ScrollView>
+        <VerticalStackLayout VerticalOptions="CenterAndExpand">
+            <Label x:Name="workoutTitle" HorizontalOptions="Center" Text="" FontSize="40" FontFamily="PoppinsSemiBold" TextColor="MidnightBlue"/>
+            <CollectionView x:Name="exerciseCollection">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Frame BorderColor="MidnightBlue" 
+                               BackgroundColor="Transparent"
+                               CornerRadius="5" 
+                               Padding="15" 
+                               Margin="20">
+                            <Grid x:Name="exerciseItem" ColumnDefinitions=".40*, .35*, .20*" RowDefinitions="50, 35" BackgroundColor="Transparent">
+                                <Label Text="{Binding Name}" FontSize="Large" Grid.Column="0" Grid.Row="0" FontFamily="PoppinsSemiBold" TextColor="Blue"/>
+                                <Label Text="{Binding MuscleGroup, StringFormat='Muscles Targeted: {0}'}" FontFamily="PoppinsRegular" FontSize="Medium" Grid.Column="0" Grid.Row="1"/>
+
+                                <Label Text="{Binding Repetitions, StringFormat='For: {0} Reps'}" FontFamily="PoppinsRegular" FontSize="Medium" Grid.Column="1" Grid.Row="0"/>
+                                <Label Text="{Binding Equipment, StringFormat='Equipment: {0}'}" FontFamily="PoppinsRegular" FontSize="Medium" Grid.Column="1" Grid.Row="1"/>
+
+                                <CheckBox x:Name="completionCheckBox" Grid.Column="2" Grid.RowSpan="2" HorizontalOptions="Center" VerticalOptions="Center"  CheckedChanged="OnCheckedChanged"  />
+                            </Grid>
+                        </Frame>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+            <HorizontalStackLayout HorizontalOptions="Center">
+                <Button Text="Back To Home Page" FontFamily="PoppinsSemiBold" BackgroundColor="White" TextColor="MidnightBlue" BorderColor="Blue" BorderWidth="1" Clicked="OnBackClicked"></Button>
+                <Label Text="OR" HorizontalOptions="Center" FontFamily="PoppinsSemiBold" FontSize="17" Margin="20" />   
+                <Button Text="Finish Workout" FontFamily="PoppinsSemiBold" BackgroundColor="#030E3E" BorderWidth="1" Clicked="OnFinishClicked"></Button>
+            </HorizontalStackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FitBody.Views.LoginEmployee">
+
+    <ContentPage.Resources>
+        <LinearGradientBrush x:Key="BackgroundGradient">
+            <GradientStop Color="#080CFE" Offset="0" />
+            <GradientStop Color="#4143c5" Offset="1" />
+        </LinearGradientBrush>
+
+        <LinearGradientBrush x:Key="BackgroundGradient2">
+            <GradientStop Color="#10237C" Offset="0" />
+            <GradientStop Color="#030E3E" Offset="1" />
+        </LinearGradientBrush>
+
+        <LinearGradientBrush x:Key="BackgroundGradient3">
+            <GradientStop Color="#260272" Offset="0" />
+            <GradientStop Color="#080CFE" Offset="1" />
+        </LinearGradientBrush>
+    </ContentPage.Resources>
+
+    <Frame Background="{StaticResource BackgroundGradient3}" Margin="50, 10">
+        <VerticalStackLayout>
+
+            <Label 
+                Text=" Welcome Employee"
+                TextColor="White"
+                FontSize="Header"
+                FontFamily="PoppinsSemiBold"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" 
+                Margin="25"
+            />
+            <Label
+                Text="As we continue to grow and evolve, please know that your efforts are deeply appreciated and valued. Thank you for being an essential part of our team and for everything you do to make FitBody a place where fitness dreams come true. Your dedication, passion, and hard work inspire us every day. Let's continue to push boundaries, challenge ourselves, and strive for greatness together."
+                FontFamily="PoppinsRegular"
+                FontSize="22"
+                TextColor="White"
+                VerticalOptions="Center"
+                HorizontalOptions="Center"
+                Margin="25"></Label>
+
+            <Entry x:Name="EmployeEmail" HeightRequest="50" WidthRequest="605"  Margin="25" FontSize="Medium" TextColor="#260272" Placeholder=" Enter your Email" BackgroundColor="White"></Entry>
+
+            <Entry x:Name="EmployeePassword" HeightRequest="50" WidthRequest=" 605" Margin="25" TextColor="#260272" Placeholder="Enter your password" BackgroundColor="White" FontSize="Medium"></Entry>
+
+            <Button Text="Login" FontFamily="PoppinsSemiBold" BackgroundColor="White" TextColor="MidnightBlue" FontSize="22" WidthRequest="300" Margin="10" Clicked="OnLoginClicked"></Button>
+            <Button Text="Back" FontFamily="PoppinsSemiBold" Background="MidnightBlue" FontSize="22" BorderColor="White" BorderWidth="1" WidthRequest="300" Margin="10" Clicked="OnBackClicked"></Button>
+
+        </VerticalStackLayout>
+    </Frame>
+</ContentPage>
